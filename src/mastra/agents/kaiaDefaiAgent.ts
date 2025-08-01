@@ -5,7 +5,6 @@ import { LibSQLStore } from "@mastra/libsql";
 // import { geminiLLM  } from "../llms/geminiLLM";
 import { openrouterLLM } from "../llms/openrouterLLM";
 import { faucetTool } from "../tools/faucetTool";
-
 import { claimUSDTTool } from "../tools/claimUSDTTool";
 import { balanceTool } from "../tools/checkBalanceTool";
 import { airtimeTool } from "../tools/airtimeTool";
@@ -22,7 +21,7 @@ import { swapTool } from "../tools/swapTool";
 
 const memory = new Memory({
   storage: new LibSQLStore({
-    url: process.env.DATABASE_URL || "file:./mastra.db",
+    url: "file:./mastra.db", // Or your database URL
   }),
   options: {
     // Keep last 20 messages in context

@@ -18,7 +18,7 @@ export const mastra: Mastra = new Mastra({
     level: "info",
   }),
   storage: new LibSQLStore({
-    url: process.env.DATABASE_URL || "file:./mastra.db",
+    url: "file:./mastra.db",
   }),
 });
 
