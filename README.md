@@ -85,28 +85,14 @@ Create a `.env` file in the root with the following variables:
 
 ```env
 TELEGRAM_BOT_TOKEN=your_telegram_token
-FAUCET_PRIVATE_KEY=your_faucet_wallet_private_key
-TREASURY_ADDRESS=your_treasury_wallet_address
-TREASURY_PK=
-
 RELOADLY_CLIENT_ID=your_reloadly_client_id
 RELOADLY_CLIENT_SECRET=your_reloadly_client_secret
 RELOADLY_OPERATOR_ID=your_reloadly_operator_id
-
 OPENROUTER_API_KEY=
-
-WALLET_SECRET_KEY=
 USDT_CONTRACT_ADDRESS=
-KAIA_USDT_PRIVATE_KEY=
-KUSDT_CLAIM_CONTRACT=
-KUSDT_CLAIM_SIGNER=
 WALLET_PRIVATE_KEY=
-KAIROS_FAUCET_WALLET=
-
-RPC_PROVIDER_URL=
-KAIASCAN_API_KEY=
-
-WALLET_PRIVATE_KEY=your_default_wallet_for_bot  # optional
+USDT_CONTRACT_ADDRESS=
+TREASURY_ADDRESS=
 ```
 
 ---

@@ -5,8 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "db:push": "prisma db push",
+    "postinstall": "prisma generate",
+    "build":"pnpm install && pnpx prisma generate",
     "dev": "mastra dev",
-    "start": "npx prisma db push && mastra dev"
+    "start": "pnpx prisma db push && mastra dev"
   },
   "keywords": [],
   "author": "",
@@ -31,8 +34,6 @@
     "zod": "^3.25.67"
   },
   "devDependencies": {
-    "@types/better-sqlite3": "^7.6.13",
-    "@types/date-fns": "^2.6.3",
     "@types/node": "^22.15.32",
     "@types/node-telegram-bot-api": "^0.64.9",
     "prisma": "^6.13.0",
